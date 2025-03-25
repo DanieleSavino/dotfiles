@@ -84,6 +84,10 @@ function fish_prompt
   set_color normal
 end
 
+function res
+    ~/.config/hypr/UserScripts/update_resolution.sh $argv  # Run the script after setting the variable
+end
+
 # set environment variables
 fish_add_path /usr/local/bin
 fish_add_path /opt/bin
