@@ -71,9 +71,16 @@ local plugins = {
     end,
   },
   {
+    "mfussenegger/nvim-jdtls",
+    ft = "java",
+  },
+
+  -- Modified Mason configuration
+  {
     "williamboman/mason.nvim",
     opts = {
       ensure_installed = {
+        -- Your existing tools...
         "clangd",
         "clang-format",
         "codelldb",
@@ -82,6 +89,11 @@ local plugins = {
         "mypy",
         "ruff",
         "pyright",
+        -- Java tools
+        "jdtls",
+        "java-debug-adapter",
+        "java-test",
+        "google-java-format"
       }
     }
   }
